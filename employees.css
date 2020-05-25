@@ -1,0 +1,30 @@
+.container{
+    display: flex;
+    padding: 1px;
+    background-color: lightblue;
+    border: black solid 2px;
+    height: fit-content;
+    width: fit-content;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+.card-img-top {
+    height: 50vh;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.card {
+    background-color: darkolivegreen;
+    border: black;
+    margin: 2;
+    flex-shrink: 1;
+    min-width: 300px;
+}
+.card:hover {
+    background-color: gray;
+}
+
+
+

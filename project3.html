@@ -1,0 +1,340 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap-4.1.3\bootstrap-4.1.3\site\docs\4.1\assets\js\vendor\jquery-slim.min">
+    <link rel="stylesheet" href="employees.css">
+
+    <title>Employee Cards</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <!--Top of the page navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+        <a class="navbar-brand" href="#">
+            <img src="Untitled.png" height="60" alt="logo">
+        </a>
+        <div class="btn-grp">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">News Feed</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Users</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+    <!--Add new employee button-->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#newMember">Add New Employee</button>
+    <!--More info modal-->
+    <div class="modal" id="newMember" ar>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">New Employee</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form action="/action/">
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="username" class="form-control" placeholder="Enter username" id="username"
+                                required>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="firstname">First Name</label>
+                            <input type="firstname" class="form-control" placeholder="Enter first name" id="firstname"
+                                required>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="lastname">Last Name</label>
+                            <input type="lastname" class="form-control" placeholder="Enter last name" id="lastname"
+                                required>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pwd">Password</label>
+                            <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="text" class="form-control" placeholder="Enter email" id="email" required>
+
+                        </div>
+                        <div class="form-group">
+                            <label for="cell">Cellphone Number</label>
+                            <input type="text" class="form-control" placeholder="Enter cellphone number" id="cell">
+
+                        </div>
+
+                        <button type="button" class="btn btn-primary"> Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card bg-blueviolet" style="width: 400px;">
+            <img class="card-img-top" src="jack-finnigan.jpg" alt="Card image">
+            <div class="card-body">
+                <h2 class="card-title">Jack Finnigan</h2>
+                <p class="card-text">E-mail: jfinnigan@gmail.com <br>Cell: 0813501882 <br>Tel: 0214227894</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#jackModal">View
+                    Info
+                </button>
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteModal">Delete
+                    Profile</button>
+
+            </div>
+            <!--More info modal-->
+            <div class="modal" id="jackModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Jack Finnigan</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Home Address: 3 Small Street, Cape Town, 8001</p>
+                            <p>Next of kin: Brenda Finnigan</p>
+                            <p>Next of kin relationship: Wife</p>
+                            <p>Next of kin contact details: 0654782786(cell) brendaf@gmail.com (email)</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card bg-blueviolet" style="width: 400px;">
+            <img class="card-img-top" src="ben-parker.jpg" alt="Card image">
+            <div class="card-body">
+                <h2 class="card-title">Ben Parker</h2>
+                <p class="card-text">Email: benparker@gmail.com <br>Cell: 0614001193 <br>Tel: 0214227895</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#benModal">View
+                    Info</button>
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteModal">Delete
+                    Profile</button>
+                <!--More info modal-->
+                <div class="modal" id="benModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Ben Parker</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Home Address: 25 Andringa Street, Cape Town, 8001</p>
+                                <p>Next of kin: Marelize Parker</p>
+                                <p>Next of kin relationship: Wife</p>
+                                <p>Next of kin contact details: 0654782352(cell) mparker@gmail.com (email)</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card bg-blue" style="width: 400px;">
+            <img class="card-img-top" src="john-doe.jpg" alt="Card image">
+            <div class="card-body">
+                <h2 class="card-title">John Doe</h2>
+                <p class="card-text">E-mail: johndoe@gmail.com <br>Cell: 0656895246 <br>Tel: 0214227896</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#johnModal">View
+                    Info
+                </button>
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteModal">Delete
+                    Profile</button>
+                <!--More info modal-->
+                <div class="modal" id="johnModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">John Doe</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Home Address: 41 Adderley Street, Cape Town, 8001</p>
+                                <p>Next of kin: Jane Doe</p>
+                                <p>Next of kin relationship: Wife</p>
+                                <p>Next of kin contact details: 0654782552(cell) janedoe@gmail.com (email)</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card bg-blue" style="width: 400px;">
+            <img class="card-img-top" src="joseph-gonzalez.jpg" alt="Card image">
+            <div class="card-body">
+                <h2 class="card-title">Joseph Gonzalez</h2>
+                <p class="card-text">E-mail: josephgonzalez@gmail.com <br>Cell: 0734880412 <br>Tel: 0214227897</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#josephModal">View
+                    Info
+                </button>
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteModal">Delete
+                    Profile</button>
+                <!--More info modal-->
+                <div class="modal" id="josephModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Joseph Gonzalez</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Home Address: 23 Long Street, Cape Town, 8001</p>
+                                <p>Next of kin: Julia Gonzalez</p>
+                                <p>Next of kin relationship: Wife</p>
+                                <p>Next of kin contact details: 0654782564(cell) jgonzalez@gmail.com (email)</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card bg-blue" style="width: 400px;">
+            <img class="card-img-top" src="jurica-koletic.jpg" alt="Card image">
+            <div class="card-body">
+                <h2 class="card-title">Jurica Koletic</h2>
+                <p class="card-text">E-mail: jkoletic@gmail.com <br>Cell: 0644646248 <br>Tel: 0214227898</p>
+                <!--Button to open the more info modal-->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#juricaModal">View
+                    Info
+                </button>
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteModal">Delete
+                    Profile</button>
+                <!--More info modal-->
+                <div class="modal" id="juricaModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Jurica Koletic</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Home Address: 73 Loop Street, Cape Town, 8001</p>
+                                <p>Next of kin: Jessica Koletic</p>
+                                <p>Next of kin relationship: Wife</p>
+                                <p>Next of kin contact details: 0654782563(cell) jessicakoletic@gmail.com (email)
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="card bg-blue" style="width: 400px;">
+            <img class="card-img-top" src="marius-ciocirlan.jpg" alt="Card image">
+            <div class="card-body">
+                <h2 class="card-title">Marius Ciocirlan</h2>
+                <p class="card-text">E-mail: mariusc@gmail.com <br>Cell: 0656895123 <br>Tel: 0214227899</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#juricaModal">View
+                    Info
+                </button>
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteModal">Delete
+                    Profile</button>
+                <!--More info modal-->
+                <div class="modal" id="juricaModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Jurica Koletic</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Home Address: 73 Loop Street, Cape Town, 8001</p>
+                                <p>Next of kin: Jessica Koletic</p>
+                                <p>Next of kin relationship: Wife</p>
+                                <p>Next of kin contact details: 0654782563(cell) jessicakoletic@gmail.com (email)
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--Delete Profile Confirmation Modal-->
+    <div class="modal" id="deleteModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Are you sure you want to delete user?</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <button type="button" class="btn btn-danger">Yes</button>
+                    <button type="button" class="btn btn-primary">No</button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; Copyright 2020
+            <a href="#">Contact Us</a>
+        </p>
+        
+    </div>
+    <!--Javascript imports-->
+    <script src="popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
